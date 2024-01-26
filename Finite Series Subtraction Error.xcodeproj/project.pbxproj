@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6897912E2B645F2000B3913C /* Finite_Series_Subtraction_ErrorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6897912D2B645F2000B3913C /* Finite_Series_Subtraction_ErrorApp.swift */; };
+		689791302B645F2000B3913C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6897912F2B645F2000B3913C /* ContentView.swift */; };
+		689791322B645F2100B3913C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689791312B645F2100B3913C /* Assets.xcassets */; };
+		689791362B645F2100B3913C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689791352B645F2100B3913C /* Preview Assets.xcassets */; };
+		689791402B645F2100B3913C /* Finite_Series_Subtraction_ErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6897913F2B645F2100B3913C /* Finite_Series_Subtraction_ErrorTests.swift */; };
+		6897914A2B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689791492B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITests.swift */; };
+		6897914C2B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6897914B2B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6897913C2B645F2100B3913C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 689791222B645F2000B3913C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 689791292B645F2000B3913C;
+			remoteInfo = "Finite Series Subtraction Error";
+		};
+		689791462B645F2100B3913C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 689791222B645F2000B3913C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 689791292B645F2000B3913C;
+			remoteInfo = "Finite Series Subtraction Error";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6897912A2B645F2000B3913C /* Finite Series Subtraction Error.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finite Series Subtraction Error.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6897912D2B645F2000B3913C /* Finite_Series_Subtraction_ErrorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finite_Series_Subtraction_ErrorApp.swift; sourceTree = "<group>"; };
+		6897912F2B645F2000B3913C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		689791312B645F2100B3913C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		689791332B645F2100B3913C /* Finite_Series_Subtraction_Error.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Finite_Series_Subtraction_Error.entitlements; sourceTree = "<group>"; };
+		689791352B645F2100B3913C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6897913B2B645F2100B3913C /* Finite Series Subtraction ErrorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finite Series Subtraction ErrorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6897913F2B645F2100B3913C /* Finite_Series_Subtraction_ErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finite_Series_Subtraction_ErrorTests.swift; sourceTree = "<group>"; };
+		689791452B645F2100B3913C /* Finite Series Subtraction ErrorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finite Series Subtraction ErrorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		689791492B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finite_Series_Subtraction_ErrorUITests.swift; sourceTree = "<group>"; };
+		6897914B2B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finite_Series_Subtraction_ErrorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		689791272B645F2000B3913C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689791382B645F2100B3913C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689791422B645F2100B3913C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		689791212B645F2000B3913C = {
+			isa = PBXGroup;
+			children = (
+				6897912C2B645F2000B3913C /* Finite Series Subtraction Error */,
+				6897913E2B645F2100B3913C /* Finite Series Subtraction ErrorTests */,
+				689791482B645F2100B3913C /* Finite Series Subtraction ErrorUITests */,
+				6897912B2B645F2000B3913C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6897912B2B645F2000B3913C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6897912A2B645F2000B3913C /* Finite Series Subtraction Error.app */,
+				6897913B2B645F2100B3913C /* Finite Series Subtraction ErrorTests.xctest */,
+				689791452B645F2100B3913C /* Finite Series Subtraction ErrorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6897912C2B645F2000B3913C /* Finite Series Subtraction Error */ = {
+			isa = PBXGroup;
+			children = (
+				6897912D2B645F2000B3913C /* Finite_Series_Subtraction_ErrorApp.swift */,
+				6897912F2B645F2000B3913C /* ContentView.swift */,
+				689791312B645F2100B3913C /* Assets.xcassets */,
+				689791332B645F2100B3913C /* Finite_Series_Subtraction_Error.entitlements */,
+				689791342B645F2100B3913C /* Preview Content */,
+			);
+			path = "Finite Series Subtraction Error";
+			sourceTree = "<group>";
+		};
+		689791342B645F2100B3913C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				689791352B645F2100B3913C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6897913E2B645F2100B3913C /* Finite Series Subtraction ErrorTests */ = {
+			isa = PBXGroup;
+			children = (
+				6897913F2B645F2100B3913C /* Finite_Series_Subtraction_ErrorTests.swift */,
+			);
+			path = "Finite Series Subtraction ErrorTests";
+			sourceTree = "<group>";
+		};
+		689791482B645F2100B3913C /* Finite Series Subtraction ErrorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				689791492B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITests.swift */,
+				6897914B2B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITestsLaunchTests.swift */,
+			);
+			path = "Finite Series Subtraction ErrorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		689791292B645F2000B3913C /* Finite Series Subtraction Error */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6897914F2B645F2100B3913C /* Build configuration list for PBXNativeTarget "Finite Series Subtraction Error" */;
+			buildPhases = (
+				689791262B645F2000B3913C /* Sources */,
+				689791272B645F2000B3913C /* Frameworks */,
+				689791282B645F2000B3913C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Finite Series Subtraction Error";
+			productName = "Finite Series Subtraction Error";
+			productReference = 6897912A2B645F2000B3913C /* Finite Series Subtraction Error.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6897913A2B645F2100B3913C /* Finite Series Subtraction ErrorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 689791522B645F2100B3913C /* Build configuration list for PBXNativeTarget "Finite Series Subtraction ErrorTests" */;
+			buildPhases = (
+				689791372B645F2100B3913C /* Sources */,
+				689791382B645F2100B3913C /* Frameworks */,
+				689791392B645F2100B3913C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6897913D2B645F2100B3913C /* PBXTargetDependency */,
+			);
+			name = "Finite Series Subtraction ErrorTests";
+			productName = "Finite Series Subtraction ErrorTests";
+			productReference = 6897913B2B645F2100B3913C /* Finite Series Subtraction ErrorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		689791442B645F2100B3913C /* Finite Series Subtraction ErrorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 689791552B645F2100B3913C /* Build configuration list for PBXNativeTarget "Finite Series Subtraction ErrorUITests" */;
+			buildPhases = (
+				689791412B645F2100B3913C /* Sources */,
+				689791422B645F2100B3913C /* Frameworks */,
+				689791432B645F2100B3913C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				689791472B645F2100B3913C /* PBXTargetDependency */,
+			);
+			name = "Finite Series Subtraction ErrorUITests";
+			productName = "Finite Series Subtraction ErrorUITests";
+			productReference = 689791452B645F2100B3913C /* Finite Series Subtraction ErrorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		689791222B645F2000B3913C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					689791292B645F2000B3913C = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					6897913A2B645F2100B3913C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 689791292B645F2000B3913C;
+					};
+					689791442B645F2100B3913C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 689791292B645F2000B3913C;
+					};
+				};
+			};
+			buildConfigurationList = 689791252B645F2000B3913C /* Build configuration list for PBXProject "Finite Series Subtraction Error" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 689791212B645F2000B3913C;
+			productRefGroup = 6897912B2B645F2000B3913C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				689791292B645F2000B3913C /* Finite Series Subtraction Error */,
+				6897913A2B645F2100B3913C /* Finite Series Subtraction ErrorTests */,
+				689791442B645F2100B3913C /* Finite Series Subtraction ErrorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		689791282B645F2000B3913C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689791362B645F2100B3913C /* Preview Assets.xcassets in Resources */,
+				689791322B645F2100B3913C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689791392B645F2100B3913C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689791432B645F2100B3913C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		689791262B645F2000B3913C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689791302B645F2000B3913C /* ContentView.swift in Sources */,
+				6897912E2B645F2000B3913C /* Finite_Series_Subtraction_ErrorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689791372B645F2100B3913C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689791402B645F2100B3913C /* Finite_Series_Subtraction_ErrorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689791412B645F2100B3913C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6897914C2B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITestsLaunchTests.swift in Sources */,
+				6897914A2B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6897913D2B645F2100B3913C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 689791292B645F2000B3913C /* Finite Series Subtraction Error */;
+			targetProxy = 6897913C2B645F2100B3913C /* PBXContainerItemProxy */;
+		};
+		689791472B645F2100B3913C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 689791292B645F2000B3913C /* Finite Series Subtraction Error */;
+			targetProxy = 689791462B645F2100B3913C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6897914D2B645F2100B3913C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6897914E2B645F2100B3913C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		689791502B645F2100B3913C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Finite Series Subtraction Error/Finite_Series_Subtraction_Error.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Finite Series Subtraction Error/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZIPhys440.Finite-Series-Subtraction-Error";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		689791512B645F2100B3913C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Finite Series Subtraction Error/Finite_Series_Subtraction_Error.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Finite Series Subtraction Error/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZIPhys440.Finite-Series-Subtraction-Error";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		689791532B645F2100B3913C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZIPhys440.Finite-Series-Subtraction-ErrorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finite Series Subtraction Error.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Finite Series Subtraction Error";
+			};
+			name = Debug;
+		};
+		689791542B645F2100B3913C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZIPhys440.Finite-Series-Subtraction-ErrorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finite Series Subtraction Error.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Finite Series Subtraction Error";
+			};
+			name = Release;
+		};
+		689791562B645F2100B3913C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZIPhys440.Finite-Series-Subtraction-ErrorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Finite Series Subtraction Error";
+			};
+			name = Debug;
+		};
+		689791572B645F2100B3913C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ZIPhys440.Finite-Series-Subtraction-ErrorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Finite Series Subtraction Error";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		689791252B645F2000B3913C /* Build configuration list for PBXProject "Finite Series Subtraction Error" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6897914D2B645F2100B3913C /* Debug */,
+				6897914E2B645F2100B3913C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6897914F2B645F2100B3913C /* Build configuration list for PBXNativeTarget "Finite Series Subtraction Error" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689791502B645F2100B3913C /* Debug */,
+				689791512B645F2100B3913C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		689791522B645F2100B3913C /* Build configuration list for PBXNativeTarget "Finite Series Subtraction ErrorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689791532B645F2100B3913C /* Debug */,
+				689791542B645F2100B3913C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		689791552B645F2100B3913C /* Build configuration list for PBXNativeTarget "Finite Series Subtraction ErrorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689791562B645F2100B3913C /* Debug */,
+				689791572B645F2100B3913C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 689791222B645F2000B3913C /* Project object */;
+}
