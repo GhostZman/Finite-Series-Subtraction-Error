@@ -19,12 +19,26 @@ import Observation
             let returnedResults = await withTaskGroup(
                 of: Float,
                 returning: Float,
-                body:
-            
-            )
+                body: { taskgroup in
+                    for seriesIndex in 0...(2*N) {
+                        taskgroup.add{ let seriesNResult: (Float) = pow(-1,seriesIndex)*(seriesIndex)/(seriesIndex + 1)
+                            return seriesNResult
+                        }
+                    }
+                    var combinedTaskResults: [Float] = []
+                    for await result in taskgroup{
+                        combinedTaskResults.append(result)
+                    }
+                    return combinedTaskResults
+            })
+            let sortedCombinedResults = returnedResults.sorted(by: { $0.0 < $1.0})
+        }
+        let seriesResult = 0
+        for result in combinedTaskResults{
+            seriesResult += result
         }
         
-        
-        return Float(0.0)
+        self.series1Result = seriesResult
+        return seriesResult
     }
 }
