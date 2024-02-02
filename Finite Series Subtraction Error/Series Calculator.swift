@@ -31,7 +31,6 @@ import Observation
                     }
                     return combinedTaskResults
             })
-            let sortedCombinedResults = returnedResults.sorted(by: { $0.0 < $1.0})
         }
         let seriesResult: Float = 0.0
         for result in returnedResults{
@@ -76,7 +75,6 @@ import Observation
                     }
                     return combinedTaskResults
             })
-            
         }
         let seriesResult: Float = 0.0
         for result in firstReturnedResults{
@@ -86,6 +84,33 @@ import Observation
             seriesResult += result
         }
         self.series2Result = seriesResult
+        return seriesResult
+    }
+
+func computeSeries3(N: Int) -> Float {
+        Task{
+            let returnedResults = await withTaskGroup(
+                of: Float,
+                returning: Float,
+                body: { taskgroup in
+                    for seriesIndex in 1...N {
+                        taskgroup.add{ let seriesNResult: (Float) = 1/(2*seriesIndex*(2*seriesIndex + 1))
+                            return seriesNResult
+                        }
+                    }
+                    var combinedTaskResults: [Float] = []
+                    for await result in taskgroup{
+                        combinedTaskResults.append(result)
+                    }
+                    return combinedTaskResults
+            })
+        }
+        let seriesResult: Float = 0.0
+        for result in returnedResults{
+            seriesResult += result
+        }
+        
+        self.series3Result = seriesResult
         return seriesResult
     }
 }
