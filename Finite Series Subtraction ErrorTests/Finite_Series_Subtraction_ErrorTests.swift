@@ -17,6 +17,11 @@ final class Finite_Series_Subtraction_ErrorTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    func series1Test() async {
+        let mySeriesCalculator = FiniteSeries()
+        print(mySeriesCalculator.computeSeries1(N: 1))
+        
+    }
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
