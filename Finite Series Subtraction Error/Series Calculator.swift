@@ -20,7 +20,7 @@ import Observation
                 of: Float,
                 returning: Float,
                 body: { taskgroup in
-                    for seriesIndex in 0...(2*N) {
+                    for seriesIndex in 1...(2*N) {
                         taskgroup.add{ let seriesNResult: (Float) = pow(-1,seriesIndex)*(seriesIndex)/(seriesIndex + 1)
                             return seriesNResult
                         }
@@ -34,11 +34,40 @@ import Observation
             let sortedCombinedResults = returnedResults.sorted(by: { $0.0 < $1.0})
         }
         let seriesResult: Float = 0.0
-        for result in combinedTaskResults{
+        for result in returnedResults{
             seriesResult += result
         }
         
         self.series1Result = seriesResult
+        return seriesResult
+    }
+
+
+    func computeSeries2(N: Int) -> Float {
+        Task{
+            let returnedResults = await withTaskGroup(
+                of: Float,
+                returning: Float,
+                body: { taskgroup in
+                    for seriesIndex in 1...N {
+                        taskgroup.add{ let seriesNResult: (Float) = (2*seriesIndex - 1)/(2*seriesIndex)
+                            return seriesNResult
+                        }
+                    }
+                    var combinedTaskResults: [Float] = []
+                    for await result in taskgroup{
+                        combinedTaskResults.append(result)
+                    }
+                    return combinedTaskResults
+            })
+            let sortedCombinedResults = returnedResults.sorted(by: { $0.0 < $1.0})
+        }
+        let seriesResult: Float = 0.0
+        for result in returnedResults{
+            seriesResult += result
+        }
+        
+        self.series2Result = seriesResult
         return seriesResult
     }
 }
