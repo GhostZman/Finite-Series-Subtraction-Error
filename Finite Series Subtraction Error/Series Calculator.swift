@@ -15,7 +15,7 @@ import Observation
     var series2Result: Float = 0.0
     var series3Result: Float = 0.0
     
-    func computeSeries1(N: Int) -> Float {
+    func computeSeries(N: Int) -> Float {
         
         Task{
             
