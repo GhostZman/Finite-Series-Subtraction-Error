@@ -33,7 +33,7 @@ import Observation
             })
             let sortedCombinedResults = returnedResults.sorted(by: { $0.0 < $1.0})
         }
-        let seriesResult = 0
+        let seriesResult: Float = 0.0
         for result in combinedTaskResults{
             seriesResult += result
         }
