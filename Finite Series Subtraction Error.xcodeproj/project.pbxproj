@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6834FD6A2B6D9E3500C5806A /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 6834FD692B6D9E3400C5806A /* Preview Content */; };
+		6834FD6B2B6D9E3500C5806A /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 6834FD692B6D9E3400C5806A /* Preview Content */; };
+		6834FD6C2B6D9E3500C5806A /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 6834FD692B6D9E3400C5806A /* Preview Content */; };
+		6834FD6E2B6D9E4000C5806A /* Series_Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6834FD6D2B6D9E4000C5806A /* Series_Element.swift */; };
+		6834FD6F2B6D9E4000C5806A /* Series_Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6834FD6D2B6D9E4000C5806A /* Series_Element.swift */; };
+		6834FD702B6D9E4000C5806A /* Series_Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6834FD6D2B6D9E4000C5806A /* Series_Element.swift */; };
 		6897912E2B645F2000B3913C /* Finite_Series_Subtraction_ErrorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6897912D2B645F2000B3913C /* Finite_Series_Subtraction_ErrorApp.swift */; };
 		689791302B645F2000B3913C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6897912F2B645F2000B3913C /* ContentView.swift */; };
 		689791322B645F2100B3913C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689791312B645F2100B3913C /* Assets.xcassets */; };
-		689791362B645F2100B3913C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689791352B645F2100B3913C /* Preview Assets.xcassets */; };
 		689791402B645F2100B3913C /* Finite_Series_Subtraction_ErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6897913F2B645F2100B3913C /* Finite_Series_Subtraction_ErrorTests.swift */; };
 		6897914A2B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689791492B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITests.swift */; };
 		6897914C2B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6897914B2B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITestsLaunchTests.swift */; };
@@ -41,12 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6834FD692B6D9E3400C5806A /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
+		6834FD6D2B6D9E4000C5806A /* Series_Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Series_Element.swift; sourceTree = "<group>"; };
 		6897912A2B645F2000B3913C /* Finite Series Subtraction Error.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finite Series Subtraction Error.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6897912D2B645F2000B3913C /* Finite_Series_Subtraction_ErrorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finite_Series_Subtraction_ErrorApp.swift; sourceTree = "<group>"; };
 		6897912F2B645F2000B3913C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		689791312B645F2100B3913C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		689791332B645F2100B3913C /* Finite_Series_Subtraction_Error.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Finite_Series_Subtraction_Error.entitlements; sourceTree = "<group>"; };
-		689791352B645F2100B3913C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6897913B2B645F2100B3913C /* Finite Series Subtraction ErrorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finite Series Subtraction ErrorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6897913F2B645F2100B3913C /* Finite_Series_Subtraction_ErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finite_Series_Subtraction_ErrorTests.swift; sourceTree = "<group>"; };
 		689791452B645F2100B3913C /* Finite Series Subtraction ErrorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finite Series Subtraction ErrorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,19 +112,12 @@
 				6897912D2B645F2000B3913C /* Finite_Series_Subtraction_ErrorApp.swift */,
 				6897912F2B645F2000B3913C /* ContentView.swift */,
 				6897915C2B64609C00B3913C /* Series Calculator.swift */,
+				6834FD6D2B6D9E4000C5806A /* Series_Element.swift */,
 				689791312B645F2100B3913C /* Assets.xcassets */,
+				6834FD692B6D9E3400C5806A /* Preview Content */,
 				689791332B645F2100B3913C /* Finite_Series_Subtraction_Error.entitlements */,
-				689791342B645F2100B3913C /* Preview Content */,
 			);
 			path = "Finite Series Subtraction Error";
-			sourceTree = "<group>";
-		};
-		689791342B645F2100B3913C /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				689791352B645F2100B3913C /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		6897913E2B645F2100B3913C /* Finite Series Subtraction ErrorTests */ = {
@@ -242,7 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				689791362B645F2100B3913C /* Preview Assets.xcassets in Resources */,
+				6834FD6A2B6D9E3500C5806A /* Preview Content in Resources */,
 				689791322B645F2100B3913C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6834FD6B2B6D9E3500C5806A /* Preview Content in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6834FD6C2B6D9E3500C5806A /* Preview Content in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +272,7 @@
 				6897915D2B64609C00B3913C /* Series Calculator.swift in Sources */,
 				689791302B645F2000B3913C /* ContentView.swift in Sources */,
 				6897912E2B645F2000B3913C /* Finite_Series_Subtraction_ErrorApp.swift in Sources */,
+				6834FD6E2B6D9E4000C5806A /* Series_Element.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +282,7 @@
 			files = (
 				689791582B645FAE00B3913C /* ContentView.swift in Sources */,
 				6897915A2B645FB100B3913C /* Finite_Series_Subtraction_ErrorApp.swift in Sources */,
+				6834FD6F2B6D9E4000C5806A /* Series_Element.swift in Sources */,
 				689791402B645F2100B3913C /* Finite_Series_Subtraction_ErrorTests.swift in Sources */,
 				6897915E2B64609C00B3913C /* Series Calculator.swift in Sources */,
 			);
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6897914C2B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITestsLaunchTests.swift in Sources */,
+				6834FD702B6D9E4000C5806A /* Series_Element.swift in Sources */,
 				6897915F2B64609C00B3913C /* Series Calculator.swift in Sources */,
 				6897914A2B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITests.swift in Sources */,
 				689791592B645FAE00B3913C /* ContentView.swift in Sources */,

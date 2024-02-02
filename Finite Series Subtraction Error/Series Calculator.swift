@@ -10,35 +10,27 @@ import Observation
 
 @Observable class FiniteSeries {
     
+    var maxIndex: Int = 1
     var series1Result: Float = 0.0
     var series2Result: Float = 0.0
     var series3Result: Float = 0.0
     
     func computeSeries1(N: Int) -> Float {
+        
         Task{
-            let returnedResults = await withTaskGroup(
-                of: Float,
-                returning: Float,
-                body: { taskgroup in
-                    for seriesIndex in 1...(2*N) {
-                        taskgroup.add{ let seriesNResult: (Float) = pow(-1,seriesIndex)*(seriesIndex)/(seriesIndex + 1)
-                            return seriesNResult
-                        }
+            
+            let combinedResults = await withTaskGroup(of: (Int, Float).self,
+                                                      returning:[(Int,Float)].self,
+                                                      body: { taskGroup in
+                for seriesNIndex in stride(from: 1, through: N, by: 1){
+                    
+                    taskGroup.addTask{
+                        let result = await pow(-1)
                     }
-                    var combinedTaskResults: [Float] = []
-                    for await result in taskgroup{
-                        combinedTaskResults.append(result)
-                    }
-                    return combinedTaskResults
+                }
+                
             })
         }
-        let seriesResult: Float = 0.0
-        for result in returnedResults{
-            seriesResult += result
-        }
-        
-        self.series1Result = seriesResult
-        return seriesResult
     }
 
 
