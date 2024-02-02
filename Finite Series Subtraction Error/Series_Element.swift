@@ -20,7 +20,7 @@ import Observation
             
         }
         
-        return (N, sum)
+        return (1, sum)
     }
     
     func series2Element(N: Int) async -> (Int, Float){
@@ -38,7 +38,7 @@ import Observation
         
         let sum = -1*sumnegative+sumpositive
         
-        return (N, sum)
+        return (2, sum)
     }
     
     func series3Element(N: Int) async -> (Int, Float){
@@ -52,6 +52,6 @@ import Observation
             
         }
         
-        return (N, sum)
+        return (3, sum)
     }
 }

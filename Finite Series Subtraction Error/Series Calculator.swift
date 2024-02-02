@@ -15,36 +15,42 @@ import Observation
     var series2Result: Float = 0.0
     var series3Result: Float = 0.0
     
-    func computeSeries(N: Int) -> Float {
+    func computeSeries(N: Int){
         
         Task{
             
             let combinedResults = await withTaskGroup(of: (Int, Float).self,
                                                       returning:[(Int,Float)].self,
                                                       body: { taskGroup in
-                for seriesNIndex in stride(from: 1, through: 2*N, by: 1){
+                
+                taskGroup.addTask{
+                    let series1 = await seriesElement().series1Element(N: N)
                     
-                    taskGroup.addTask{
-                        let elementValue = await seriesElement().series1Element(N: seriesNIndex)
-                        
-                        return (seriesNIndex, elementValue)
-                    }
+                    return series1
                 }
+                
+                taskGroup.addTask{
+                    let series2 = await seriesElement().series2Element(N: N)
+                    
+                    return series2
+                }
+                
+                taskGroup.addTask{
+                    let series3 = await seriesElement().series3Element(N: N)
+                    
+                    return series3
+                }
+                
                 var combinedTaskResults :[(Int, Float)] = []
                 for await result in taskGroup {
                     combinedTaskResults.append(result)
                 }
-                
                 return combinedTaskResults
             })
-            
             let sortedCombinedResults = combinedResults.sorted(by: { $0.0 < $1.0 })
-            var seriesResult: Float = 0.0
-            for item in sortedCombinedResults{
-                seriesResult = seriesResult + item.1
-            }
-            series1Result = seriesResult
-            return seriesResult
+            self.series1Result = sortedCombinedResults[0].1
+            self.series2Result = sortedCombinedResults[1].1
+            self.series3Result = sortedCombinedResults[2].1
         }
     }
 }
