@@ -22,7 +22,7 @@ import Observation
             let combinedResults = await withTaskGroup(of: (Int, Float).self,
                                                       returning:[(Int,Float)].self,
                                                       body: { taskGroup in
-                for seriesNIndex in stride(from: 1, through: N, by: 1){
+                for seriesNIndex in stride(from: 1, through: 2*N, by: 1){
                     
                     taskGroup.addTask{
                         let elementValue = await seriesElement().series1Element(N: seriesNIndex)
