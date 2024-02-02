@@ -45,7 +45,7 @@ import Observation
 
     func computeSeries2(N: Int) -> Float {
         Task{
-            let returnedResults = await withTaskGroup(
+            let firstReturnedResults = await withTaskGroup(
                 of: Float,
                 returning: Float,
                 body: { taskgroup in
@@ -60,13 +60,31 @@ import Observation
                     }
                     return combinedTaskResults
             })
-            let sortedCombinedResults = returnedResults.sorted(by: { $0.0 < $1.0})
+            
+            let secondReturnedResults = await withTaskGroup(
+                of: Float,
+                returning: Float,
+                body: { taskgroup in
+                    for seriesIndex in 1...N {
+                        taskgroup.add{ let seriesNResult: (Float) = (2*seriesIndex)/(2*seriesIndex + 1)
+                            return seriesNResult
+                        }
+                    }
+                    var combinedTaskResults: [Float] = []
+                    for await result in taskgroup{
+                        combinedTaskResults.append(result)
+                    }
+                    return combinedTaskResults
+            })
+            
         }
         let seriesResult: Float = 0.0
-        for result in returnedResults{
+        for result in firstReturnedResults{
+            seriesResult -= result
+        }
+        for result in secondReturnedResults{
             seriesResult += result
         }
-        
         self.series2Result = seriesResult
         return seriesResult
     }
