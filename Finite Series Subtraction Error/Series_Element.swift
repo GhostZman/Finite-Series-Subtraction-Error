@@ -8,15 +8,14 @@
 import SwiftUI
 import Observation
 
-@Observable class seriesElement {
+@Observable class SeriesElement {
     func series1Element(N: Int) async -> (Int, Float){
-        
-        let newN = Float(N)
+    
         var sum :Float = 0.0
         
         for i in 1...2*N{
             
-            sum += Float(pow(-1.0, newN))*newN/(newN+1)
+            sum += Float(pow(-1.0, Float(i)))*Float(i)/(Float(i)+1)
             
         }
         
@@ -25,14 +24,13 @@ import Observation
     
     func series2Element(N: Int) async -> (Int, Float){
         
-        let newN = Float(N)
         var sumnegative :Float = 0.0
         var sumpositive :Float = 0.0
         
         for i in 1...N{
             
-            sumnegative += Float(2*N - 1)/Float(2*N)
-            sumpositive += Float(2*N)/Float(2*N + 1)
+            sumnegative += Float(2*Float(i) - 1)/Float(2*Float(i))
+            sumpositive += Float(2*Float(i))/Float(2*Float(i) + 1)
             
         }
         
@@ -43,12 +41,11 @@ import Observation
     
     func series3Element(N: Int) async -> (Int, Float){
         
-        let newN = Float(N)
         var sum :Float = 0.0
         
         for i in 1...N{
             
-            sum += 1/Float(2*N*(2*N + 1))
+            sum += 1/Float(2*Float(i)*(2*Float(i) + 1))
             
         }
         

@@ -17,19 +17,44 @@ final class Finite_Series_Subtraction_ErrorTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func series1Test() async {
-        let mySeriesCalculator = FiniteSeries()
-        print(mySeriesCalculator.computeSeries1(N: 1))
-        
-    }
-    func testExample() throws {
+    
+    func testExample() async throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        let mySeriesCalculator = SeriesElement()
+        
+        let series1Result = await mySeriesCalculator.series1Element(N: 1).1
+        XCTAssertEqual(series1Result, 0.1667, accuracy:1.0E-3, "Was not equal to this resolution.")
+    }
+    
+    func testExample2() async throws {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // Any test you write for XCTest can be annotated as throws and async.
+        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
+        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        let mySeriesCalculator = SeriesElement()
+        
+        let series2Result = await mySeriesCalculator.series2Element(N: 1).1
+        XCTAssertEqual(series2Result, 0.1667, accuracy:1.0E-3, "Was not equal to this resolution.")
+    }
+    
+    func testExample3() async throws {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // Any test you write for XCTest can be annotated as throws and async.
+        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
+        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        let mySeriesCalculator = SeriesElement()
+        
+        let series3Result = await mySeriesCalculator.series3Element(N: 1).1
+        XCTAssertEqual(series3Result, 0.1667, accuracy:1.0E-3, "Was not equal to this resolution.")
     }
 
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         measure {

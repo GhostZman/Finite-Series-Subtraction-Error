@@ -24,19 +24,19 @@ import Observation
                                                       body: { taskGroup in
                 
                 taskGroup.addTask{
-                    let series1 = await seriesElement().series1Element(N: N)
+                    let series1 = await SeriesElement().series1Element(N: N)
                     
                     return series1
                 }
                 
                 taskGroup.addTask{
-                    let series2 = await seriesElement().series2Element(N: N)
+                    let series2 = await SeriesElement().series2Element(N: N)
                     
                     return series2
                 }
                 
                 taskGroup.addTask{
-                    let series3 = await seriesElement().series3Element(N: N)
+                    let series3 = await SeriesElement().series3Element(N: N)
                     
                     return series3
                 }
