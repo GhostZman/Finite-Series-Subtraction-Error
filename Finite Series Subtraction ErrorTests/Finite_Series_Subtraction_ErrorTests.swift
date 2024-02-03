@@ -54,6 +54,17 @@ final class Finite_Series_Subtraction_ErrorTests: XCTestCase {
         XCTAssertEqual(series3Result, 0.1667, accuracy:1.0E-3, "Was not equal to this resolution.")
     }
 
+    func testThreaded() async throws {
+        let allSeriesCalculator = FiniteSeries()
+        
+        allSeriesCalculator.computeSeries(N: 10)
+        
+        sleep(2)
+        XCTAssertEqual(allSeriesCalculator.series1Result, 0.28360954, accuracy:1.0E-5, "Was not equal to this resolution.")
+        XCTAssertEqual(allSeriesCalculator.series2Result, 0.28360954, accuracy:1.0E-5, "Was not equal to this resolution.")
+        XCTAssertEqual(allSeriesCalculator.series3Result, 0.28360954, accuracy:1.0E-5, "Was not equal to this resolution.")
+        
+    }
     
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
