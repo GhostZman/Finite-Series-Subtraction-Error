@@ -5,6 +5,7 @@
 //  Created by Phys440Zachary on 1/26/24.
 //
 
+import Foundation
 import SwiftUI
 import Observation
 
@@ -14,6 +15,9 @@ import Observation
     var series1Result: Float = 0.0
     var series2Result: Float = 0.0
     var series3Result: Float = 0.0
+    
+    var plotDataModel: PlotDataClass? = nil
+    var theText = ""
     
     func computeSeries(N: Int){
         
@@ -52,5 +56,27 @@ import Observation
             self.series2Result = sortedCombinedResults[1].1
             self.series3Result = sortedCombinedResults[2].1
         }
+    }
+    
+    func plotserieserror() async {
+        
+        await resetCalculatedTextOnMainThread()
+        
+        theText = "y = Series Error"
+        
+        var plotData :[(x: Double, y: Double)] = []
+        for i in 1 ... maxIndex {
+            let x = i
+            
+            computeSeries(N: i)
+            
+            let y =
+        }
+    }
+    
+    @MainActor func resetCalculatedTextOnMainThread() {
+        //Print Header
+        plotDataModel!.calculatedText = ""
+
     }
 }
