@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import Charts
+
+struct PlotDataStruct: Identifiable {
+    var id: Double { xVal }
+    let xVal: Double
+    let yVal: Double
+}
+

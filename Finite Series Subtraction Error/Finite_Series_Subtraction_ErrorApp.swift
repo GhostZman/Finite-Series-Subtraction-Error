@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import Observation
 
 @main
 struct Finite_Series_Subtraction_ErrorApp: App {
+    
+    @State var plotData = PlotClass()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+                ContentView()
+                    .environment(plotData)
+                    .tabItem {
+                        Text("Plot")
+                    }
         }
     }
+
 }
