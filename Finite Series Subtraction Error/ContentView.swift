@@ -63,51 +63,13 @@ struct ContentView: View {
     
             
             Divider()
-        
-            HStack{
-                
-                HStack(alignment: .center) {
-                    Text("temp:")
-                        .font(.callout)
-                        .bold()
-                    TextField("temp", text: $tempInput)
-                        .padding()
-                }.padding()
-                
-                Toggle(isOn: $isChecked) {
-                            Text("Display Error")
-                        }
-                .padding()
-                
-                
-            }
-            
             
             HStack{
-                Button("exp(-x)", action: {
-                    
-                    Task.init{
+                Button("Calculate", action: { Task.init{
                     
                     self.selector = 0
+                    
                     await self.calculate()
-                    }
-                    
-                    
-                    
-                }
-                
-                
-                )
-                .padding()
-                
-            }
-            
-            HStack{
-                Button("x", action: { Task.init{
-                    
-                    self.selector = 1
-                    
-                    await self.calculate2()
                     
                     
                 }
@@ -144,9 +106,6 @@ struct ContentView: View {
 
 
                 taskGroup.addTask {
-
-        
-        var temp = 0.0
         
         
         
@@ -162,42 +121,6 @@ struct ContentView: View {
   
         
         
-    }
-    
-    
-    /// calculate
-    /// Function accepts the command to start the calculation from the GUI
-    func calculate2() async {
-        
-        
-        //pass the plotDataModel to the Calculator
-        
-        await setupPlotDataModel(selector: 1)
-        
-            
-            
-            let _ = await withTaskGroup(of:  Void.self) { taskGroup in
-
-
-
-                taskGroup.addTask {
-
-        
-        var temp = 0.0
-        
-        
-        
-        //Calculate the new plotting data and place in the plotDataModel
-        await calculator.plotserieserror()
-                  
-                    
-                }
-                
-            }
-            
-        
-        
-
     }
     
 

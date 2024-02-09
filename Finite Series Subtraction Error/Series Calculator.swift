@@ -65,18 +65,18 @@ import Observation
         theText = "y = Series Error"
         
         var plotData :[(x: Double, y: Double)] = []
-        for i in 1 ... maxIndex {
+        for i in 1 ... 50 {
             let x = i
             
             computeSeries(N: i)
-            
+            sleep(2)
             let y = abs((Double(series1Result)-Double(series3Result))/Double(series3Result))
             
             let dataPoint: (x: Double, y: Double) = (x: Double(x), y: y)
             plotData.append(contentsOf: [dataPoint])
             theText += "x = \(x), y = \(y)\n"
         }
-        await setThePlotParameters(color: "Blue", xLabel: "N", yLabel: "Series Error", title: "Number of Elements vs Series Error", xMin: 0, xMax: 1000000, yMin: -10, yMax: 10)
+        await setThePlotParameters(color: "Blue", xLabel: "N", yLabel: "Series Error", title: "Number of Elements vs Series Error", xMin: 0, xMax: 10, yMin: -1, yMax: 1)
         
         await appendDataToPlot(plotData: plotData)
         await updateCalculatedTextOnMainThread(theText: theText)
