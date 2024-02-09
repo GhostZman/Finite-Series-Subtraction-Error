@@ -70,8 +70,61 @@ import Observation
             
             computeSeries(N: i)
             
-            let y =
+            let y = abs((Double(series1Result)-Double(series3Result))/Double(series3Result))
+            
+            let dataPoint: (x: Double, y: Double) = (x: Double(x), y: y)
+            plotData.append(contentsOf: [dataPoint])
+            theText += "x = \(x), y = \(y)\n"
         }
+        await setThePlotParameters(color: "Blue", xLabel: "N", yLabel: "Series Error", title: "Number of Elements vs Series Error", xMin: 0, xMax: 1000000, yMin: -10, yMax: 10)
+        
+        await appendDataToPlot(plotData: plotData)
+        await updateCalculatedTextOnMainThread(theText: theText)
+        
+    }
+    
+    /// Adds the passed text to the display in the main window
+    /// - Parameter theText: Text Passed To Add To Display
+    @MainActor func updateCalculatedTextOnMainThread(theText: String) {
+        //Print Header
+        plotDataModel!.calculatedText += theText
+    }
+    
+    /// This appends data to be plotted to the plot array
+    /// - Parameter plotData: Array of (x, y) points to be added to the plot
+    @MainActor func appendDataToPlot(plotData: [(x: Double, y: Double)]) {
+        plotDataModel!.appendData(dataPoint: plotData)
+    }
+    
+    /// Set the Plot Parameters
+    /// - Parameters:
+    ///   - color: Color of the Plotted Data
+    ///   - xLabel: x Axis Label
+    ///   - yLabel: y Axis Label
+    ///   - title: Title of the Plot
+    ///   - xMin: Minimum value of x Axis
+    ///   - xMax: Maximum value of x Axis
+    ///   - yMin: Minimum value of y Axis
+    ///   - yMax: Maximum value of y Axis
+    @MainActor func setThePlotParameters(color: String, xLabel: String, yLabel: String, title: String, xMin: Double, xMax: Double, yMin:Double, yMax:Double) {
+        //set the Plot Parameters
+        plotDataModel!.changingPlotParameters.yMax = yMax
+        plotDataModel!.changingPlotParameters.yMin = yMin
+        plotDataModel!.changingPlotParameters.xMax = xMax
+        plotDataModel!.changingPlotParameters.xMin = xMin
+        plotDataModel!.changingPlotParameters.xLabel = xLabel
+        plotDataModel!.changingPlotParameters.yLabel = yLabel
+        
+        if color == "Red"{
+            plotDataModel!.changingPlotParameters.lineColor = Color.red
+        }
+        else{
+            
+            plotDataModel!.changingPlotParameters.lineColor = Color.blue
+        }
+        plotDataModel!.changingPlotParameters.title = title
+        
+        plotDataModel!.zeroData()
     }
     
     @MainActor func resetCalculatedTextOnMainThread() {
