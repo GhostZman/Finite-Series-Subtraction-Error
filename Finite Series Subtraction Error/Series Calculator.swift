@@ -19,6 +19,8 @@ import Observation
     var plotDataModel: PlotDataClass? = nil
     var theText = ""
     
+    var plotData :[(x: Double, y: Double)] = []
+    
     func computeSeries(N: Int){
         
         Task{
@@ -64,24 +66,60 @@ import Observation
         
         theText = "y = Series Error"
         
-        var plotData :[(x: Double, y: Double)] = []
-        for i in 1 ... 10000 {
+        self.plotData = []
+        
+//        Task{
+//            
+//            let combinedResults = await withTaskGroup(of: (x: Double, y: Double).self,
+//                                                      returning:[(x: Double, y: Double)].self,
+//                                                      body: { taskGroup in
+//                for i in 1 ... 20 {
+//                    taskGroup.addTask{
+//                        let x = log10(Double(i))
+//                        let series1: Float = await SeriesElement().series1Element(N: i).1
+//                        let series3: Float = await SeriesElement().series3Element(N: i).1
+//                        let y = log10(abs((Double(series1)-Double(series3))/Double(series3)))
+//                        
+//                        let dataPoint: (x: Double, y: Double) = (x: Double(x), y: Double(y))
+//                        return dataPoint
+//                    }
+//                }
+//                var combinedTaskResults :[(Double, Double)] = []
+//                for await result in taskGroup {
+//                    combinedTaskResults.append(result)
+//                }
+//                return combinedTaskResults
+//            })
+//            let sortedCombinedResults = combinedResults.sorted(by: { $0.0 < $1.0 })
+//            for data in sortedCombinedResults {
+//                plotData.append(contentsOf: [data])
+//            }
+//        }
+        
+        
+        for i in 1 ... 2000 {
             let x = log10(Double(i))
-            //computeSeries(N: i)
+            computeSeries(N: i)
             
             let series1: Float = await SeriesElement().series1Element(N: i).1
             let series3: Float = await SeriesElement().series3Element(N: i).1
             
-            let y = log10(abs((Double(series1)-Double(series3))/Double(series3)))
+            //let series1: Float = self.series1Result
+            //let series3: Float = self.series3Result
             
-            let dataPoint: (x: Double, y: Double) = (x: Double(x), y: y)
+            let y = log10(abs((Double(series1)-Double(series3))/Double(series3)))
+
+            let dataPoint: (x: Double, y: Double) = (x: Double(x), y: Double(y))
             plotData.append(contentsOf: [dataPoint])
             theText += "x = \(x), y = \(y)\n"
+            
         }
-        await setThePlotParameters(color: "Blue", xLabel: "N", yLabel: "Series Error", title: "Number of Elements vs Series Error", xMin: 0, xMax: 10000, yMin: -1, yMax: 1)
+        await setThePlotParameters(color: "Blue", xLabel: "log(N)", yLabel: "log(Series Error)", title: "Number of Elements vs Series Error", xMin: 0, xMax: 6, yMin: -8, yMax: 0)
         
         await appendDataToPlot(plotData: plotData)
         await updateCalculatedTextOnMainThread(theText: theText)
+        
+        return
         
     }
     

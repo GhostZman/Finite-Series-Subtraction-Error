@@ -38,6 +38,9 @@
 		68C819922B72E8C900D17C90 /* PlotDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C819912B72E8C900D17C90 /* PlotDataStruct.swift */; };
 		68C819932B72E8C900D17C90 /* PlotDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C819912B72E8C900D17C90 /* PlotDataStruct.swift */; };
 		68C819942B72E8C900D17C90 /* PlotDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C819912B72E8C900D17C90 /* PlotDataStruct.swift */; };
+		68FD01272B892D3C0027CDF9 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD01262B892D3C0027CDF9 /* Operators.swift */; };
+		68FD01282B892D3C0027CDF9 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD01262B892D3C0027CDF9 /* Operators.swift */; };
+		68FD01292B892D3C0027CDF9 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD01262B892D3C0027CDF9 /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,7 @@
 		68C819852B72E83900D17C90 /* PlotDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotDataClass.swift; sourceTree = "<group>"; };
 		68C8198D2B72E89A00D17C90 /* ChangingPlotParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangingPlotParameters.swift; sourceTree = "<group>"; };
 		68C819912B72E8C900D17C90 /* PlotDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotDataStruct.swift; sourceTree = "<group>"; };
+		68FD01262B892D3C0027CDF9 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 				68C819912B72E8C900D17C90 /* PlotDataStruct.swift */,
 				68C8198D2B72E89A00D17C90 /* ChangingPlotParameters.swift */,
 				6897915C2B64609C00B3913C /* Series Calculator.swift */,
+				68FD01262B892D3C0027CDF9 /* Operators.swift */,
 				6834FD6D2B6D9E4000C5806A /* Series_Element.swift */,
 				689791312B645F2100B3913C /* Assets.xcassets */,
 				6834FD692B6D9E3400C5806A /* Preview Content */,
@@ -297,6 +302,7 @@
 				68C819922B72E8C900D17C90 /* PlotDataStruct.swift in Sources */,
 				68C8198E2B72E89A00D17C90 /* ChangingPlotParameters.swift in Sources */,
 				68C819822B72E7FD00D17C90 /* PlotClass.swift in Sources */,
+				68FD01272B892D3C0027CDF9 /* Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				689791582B645FAE00B3913C /* ContentView.swift in Sources */,
+				68FD01282B892D3C0027CDF9 /* Operators.swift in Sources */,
 				68C8198F2B72E89A00D17C90 /* ChangingPlotParameters.swift in Sources */,
 				6897915A2B645FB100B3913C /* Finite_Series_Subtraction_ErrorApp.swift in Sources */,
 				68C819932B72E8C900D17C90 /* PlotDataStruct.swift in Sources */,
@@ -326,6 +333,7 @@
 				68C819942B72E8C900D17C90 /* PlotDataStruct.swift in Sources */,
 				6897915F2B64609C00B3913C /* Series Calculator.swift in Sources */,
 				6897914A2B645F2100B3913C /* Finite_Series_Subtraction_ErrorUITests.swift in Sources */,
+				68FD01292B892D3C0027CDF9 /* Operators.swift in Sources */,
 				68C819882B72E83900D17C90 /* PlotDataClass.swift in Sources */,
 				689791592B645FAE00B3913C /* ContentView.swift in Sources */,
 				6897915B2B645FB100B3913C /* Finite_Series_Subtraction_ErrorApp.swift in Sources */,
